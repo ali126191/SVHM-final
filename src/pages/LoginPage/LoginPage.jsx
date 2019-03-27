@@ -21,6 +21,10 @@ import CardHeader from "components/Card/CardHeader.jsx";
 import CardFooter from "components/Card/CardFooter.jsx";
 import CustomInput from "components/CustomInput/CustomInput.jsx";
 
+import Head from './../../share/Head'
+//Contains seo + head things
+import { Breadcrumb } from "gatsby-plugin-breadcrumb"
+
 import loginPageStyle from "assets/jss/material-kit-react/views/loginPage.jsx";
 
 import image from "assets/img/bg7.jpg";
@@ -43,9 +47,11 @@ class LoginPage extends React.Component {
     );
   }
   render() {
-    const { classes, ...rest } = this.props;
+    const { location, classes, ...rest } = this.props;
     return (
       <div>
+        <Head/>
+        <Breadcrumb location={location} crumbLabel="Services" />
         <Header
           absolute
           color="transparent"

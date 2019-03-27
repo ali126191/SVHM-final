@@ -39,9 +39,10 @@ function HeaderLinks({ ...props }) {
               All components
             </Link>,
             <a
-              href="https://creativetimofficial.github.io/material-kit-react/#/documentation"
+              href="#"
               target="_blank"
               className={classes.dropdownLink}
+              aria-label="documentation"
             >
               Documentation
             </a>
@@ -50,7 +51,7 @@ function HeaderLinks({ ...props }) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="https://www.creative-tim.com/product/material-kit-react"
+          href="#"
           color="transparent"
           target="_blank"
           className={classes.navLink}
@@ -66,7 +67,7 @@ function HeaderLinks({ ...props }) {
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            href="https://twitter.com/CreativeTim"
+            href="#"
             target="_blank"
             color="transparent"
             className={classes.navLink}
@@ -84,7 +85,7 @@ function HeaderLinks({ ...props }) {
         >
           <Button
             color="transparent"
-            href="https://www.facebook.com/CreativeTim"
+            href="#"
             target="_blank"
             className={classes.navLink}
           >
@@ -101,7 +102,7 @@ function HeaderLinks({ ...props }) {
         >
           <Button
             color="transparent"
-            href="https://www.instagram.com/CreativeTimOfficial"
+            href="#"
             target="_blank"
             className={classes.navLink}
           >

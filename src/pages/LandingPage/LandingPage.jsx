@@ -25,16 +25,20 @@ import ProductSection from "./Sections/ProductSection.jsx";
 import TeamSection from "./Sections/TeamSection.jsx";
 import WorkSection from "./Sections/WorkSection.jsx";
 import Head from './../../share/Head'
-
+//Contains seo + head things
+import { Breadcrumb } from "gatsby-plugin-breadcrumb"
+//Bread crumb
 
 const dashboardRoutes = [];
 
 class LandingPage extends React.Component {
   render() {
-    const { classes, ...rest } = this.props;
+    const { location, classes, ...rest } = this.props;
     return (
       <div>
-        <Head/> 
+        <Head/>
+        <Breadcrumb location={location} crumbLabel="About Us" />
+
         <Header
           color="transparent"
           routes={dashboardRoutes}

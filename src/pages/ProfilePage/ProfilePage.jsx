@@ -32,11 +32,16 @@ import work3 from "assets/img/examples/cynthia-del-rio.jpg";
 import work4 from "assets/img/examples/mariya-georgieva.jpg";
 import work5 from "assets/img/examples/clem-onojegaw.jpg";
 
+
+import Head from './../../share/Head'
+//Contains seo + head things
+import { Breadcrumb } from "gatsby-plugin-breadcrumb"
+
 import profilePageStyle from "assets/jss/material-kit-react/views/profilePage.jsx";
 
 class ProfilePage extends React.Component {
   render() {
-    const { classes, ...rest } = this.props;
+    const { location, classes, ...rest } = this.props;
     const imageClasses = classNames(
       classes.imgRaised,
       classes.imgRoundedCircle,
@@ -45,6 +50,8 @@ class ProfilePage extends React.Component {
     const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
     return (
       <div>
+        <Head/>
+        <Breadcrumb location={location} crumbLabel="Contact" />
         <Header
           color="transparent"
           brand="Material Kit React"

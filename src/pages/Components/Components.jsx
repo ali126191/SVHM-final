@@ -2,7 +2,7 @@ import React from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // react components for routing our app without refresh
-import { Link } from "gatsby";
+// import { Link } from "gatsby";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
@@ -11,7 +11,7 @@ import Header from "components/Header/Header.jsx";
 import Footer from "components/Footer/Footer.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-import Button from "components/CustomButtons/Button.jsx";
+// import Button from "components/CustomButtons/Button.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 // sections for this page
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
@@ -28,15 +28,21 @@ import HeaderLinks from "components/Header/HeaderLinks.jsx";
 // import SectionExamples from "./Sections/SectionExamples.jsx";
 // import SectionDownload from "./Sections/SectionDownload.jsx";
 import Head from './../../share/Head'
-
+//Contains seo + head things
+import { Breadcrumb } from "gatsby-plugin-breadcrumb"
 import componentsStyle from "assets/jss/material-kit-react/views/components.jsx";
 
 class Components extends React.Component {
   render() {
-    const { classes, ...rest } = this.props;
+    const { location, classes, ...rest } = this.props;
     return (
       <div>
         <Head/>
+        <Breadcrumb location={location} 
+          crumbLabel="Home"
+          crumbStyle={{ color: "#1C00ff00" }}
+          crumbActiveStyle={{ color: "orange" }} />
+
         <Header
           brand="Material Kit React"
           rightLinks={<HeaderLinks />}
