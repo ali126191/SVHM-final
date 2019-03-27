@@ -24,7 +24,7 @@ import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.js
 import ProductSection from "./Sections/ProductSection.jsx";
 import TeamSection from "./Sections/TeamSection.jsx";
 import WorkSection from "./Sections/WorkSection.jsx";
-import Head from './../../share/Head'
+import HeadTags from './../../HeadTags/Head'
 //Contains seo + head things
 import { Breadcrumb } from "gatsby-plugin-breadcrumb"
 //Bread crumb
@@ -36,7 +36,7 @@ class LandingPage extends React.Component {
     const { location, classes, ...rest } = this.props;
     return (
       <div>
-        <Head/>
+        <HeadTags/>
         <Breadcrumb location={location} crumbLabel="About Us" />
 
         <Header

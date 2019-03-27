@@ -33,7 +33,7 @@ import work4 from "assets/img/examples/mariya-georgieva.jpg";
 import work5 from "assets/img/examples/clem-onojegaw.jpg";
 
 
-import Head from './../../share/Head'
+import HeadTags from './../../HeadTags/Head'
 //Contains seo + head things
 import { Breadcrumb } from "gatsby-plugin-breadcrumb"
 
@@ -50,7 +50,7 @@ class ProfilePage extends React.Component {
     const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
     return (
       <div>
-        <Head/>
+        <HeadTags/>
         <Breadcrumb location={location} crumbLabel="Contact" />
         <Header
           color="transparent"

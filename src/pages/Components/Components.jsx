@@ -27,8 +27,7 @@ import HeaderLinks from "components/Header/HeaderLinks.jsx";
 // import SectionLogin from "./Sections/SectionLogin.jsx";
 // import SectionExamples from "./Sections/SectionExamples.jsx";
 // import SectionDownload from "./Sections/SectionDownload.jsx";
-import Head from './../../share/Head'
-//Contains seo + head things
+import HeadTags from './../../HeadTags/Head'
 import { Breadcrumb } from "gatsby-plugin-breadcrumb"
 import componentsStyle from "assets/jss/material-kit-react/views/components.jsx";
 
@@ -37,7 +36,7 @@ class Components extends React.Component {
     const { location, classes, ...rest } = this.props;
     return (
       <div>
-        <Head/>
+        <HeadTags/>
         <Breadcrumb location={location} 
           crumbLabel="Home"
           crumbStyle={{ color: "#1C00ff00" }}

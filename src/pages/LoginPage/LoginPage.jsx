@@ -21,7 +21,7 @@ import CardHeader from "components/Card/CardHeader.jsx";
 import CardFooter from "components/Card/CardFooter.jsx";
 import CustomInput from "components/CustomInput/CustomInput.jsx";
 
-import Head from './../../share/Head'
+import HeadTags from './../../HeadTags/Head'
 //Contains seo + head things
 import { Breadcrumb } from "gatsby-plugin-breadcrumb"
 
@@ -50,7 +50,7 @@ class LoginPage extends React.Component {
     const { location, classes, ...rest } = this.props;
     return (
       <div>
-        <Head/>
+        <HeadTags/>
         <Breadcrumb location={location} crumbLabel="Services" />
         <Header
           absolute
