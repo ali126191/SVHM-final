@@ -24,6 +24,8 @@ import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.js
 import ProductSection from "./Sections/ProductSection.jsx";
 import TeamSection from "./Sections/TeamSection.jsx";
 import WorkSection from "./Sections/WorkSection.jsx";
+import Head from './../../share/Head'
+
 
 const dashboardRoutes = [];
 
@@ -32,6 +34,7 @@ class LandingPage extends React.Component {
     const { classes, ...rest } = this.props;
     return (
       <div>
+        <Head/> 
         <Header
           color="transparent"
           routes={dashboardRoutes}
